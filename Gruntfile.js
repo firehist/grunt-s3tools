@@ -49,6 +49,27 @@ module.exports = function(grunt) {
       }
     },
 
+    s3deploy: {
+      options: grunt.util._.extend({
+        names: {config: 'config'},
+        archivePath: 's3/archives/',
+        localPath: 's3/config/',
+        distPath: '/manager/',
+        prefix: '',
+        suffix: ''
+      }, {}),
+      config: {}
+    },
+
+    s3invalidate: {
+      options: grunt.util._.extend({
+        names: {config: 'config'},
+        prefix: '/manager/',
+        suffix: ''
+      }, {}),
+      config: {}
+    },
+
     // Unit tests.
     nodeunit: {
       tests: ['test/*_test.js']
