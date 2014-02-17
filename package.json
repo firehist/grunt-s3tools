@@ -1,7 +1,7 @@
 {
-  "name": "grunt-angular-translate",
-  "version": "0.2.7",
-  "description": "Extract all the translation keys for angular-translate project",
+  "name": "grunt-s3tools",
+  "version": "0.0.1",
+  "description": "Grab some s3 tools",
   "main": "Gruntfile.js",
   "directories": {
     "doc": "docs",
@@ -20,6 +20,7 @@
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt": "~0.4.0",
+    "moment": "~2.5.1",
     "grunt-markdox": "~0.1.0"
   },
   "peerDependencies": {
@@ -30,18 +31,13 @@
     "url": "git://github.com/angular-translate/grunt-angular-translate.git"
   },
   "keywords": [
-    "AngularJS",
-    "angular-translate",
-    "gruntplugin",
-    "grunt",
-    "javascript",
-    "js",
-    "translate",
-    "i18n"
+    "s3",
+    "invalidate",
+    "invalidation"
   ],
   "author": "Benjamin Longearet",
   "bugs": {
-    "url": "https://github.com/angular-translate/grunt-angular-translate/issues"
+    "url": "https://github.com/firehist/grunt-s3tools/issues"
   },
   "licenses": [
     {
